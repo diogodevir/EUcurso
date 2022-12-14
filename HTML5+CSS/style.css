@@ -1,4 +1,16 @@
+h1 {
+    color: blue;
+}
 
-.paragrafo {
+h2 {
+    color: blueviolet;
+}
+
+p {
+    font-style: italic;
+}
+
+a {
     font-weight: bold;
+    color: brown;
 }
