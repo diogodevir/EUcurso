@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas no HTML e CSS - 2</title>
+    <style>
+        div {
+            margin: 30px;
+        }
+        div#idgeral table, div#idgeral th, div#idgeral td {
+            border: 1px solid black;
+        }
+        div#idgeral table {
+            border-collapse: collapse;
+        }
+        div#id2 td {
+            height: 50px;
+            width: 100px;
+            vertical-align: top;
+            text-align: center;
+        }
+        div#id3 td {
+            padding: 20px;
+        }
+        div#id4 tr:hover {
+            background-color: rgb(11, 233, 222);
+        }
+        div#id5 tr:nth-child(even){
+            background-color: #999;
+        }
+        div#id5 th {
+            background-color: black;
+            color: white;
+        }
+        div#id5 td:hover {
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div id="idgeral">
+
+        <div id="id1">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                </tr>
+                <tr>
+                    <td>Pessoa</td>
+                    <td>pessoa@local.com</td>
+                </tr>
+                    <td>Sujeito</td>
+                    <td>sujeito@local.com</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="id2">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                </tr>
+                <tr>
+                    <td>Fulano</td>
+                    <td>fulano@local.com</td>
+                </tr>
+                <tr>
+                    <td>Sicrano</td>
+                    <td>sicrano@local.com</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="id3">
+            <table>
+                <tr>
+                    <th colspan="2">Dados</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Fulano</td>
+                    <td>fulano@local.com</td>
+                </tr>
+                <tr>
+                    <td>info@local.com</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="id4">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                </tr>
+                <tr>
+                    <td>Fulano</td>
+                    <td>fulano@local.com</td>
+                </tr>
+                <tr>
+                    <td>Informações</td>
+                    <td>info@local.com</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="id5">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                </tr>
+                <tr>
+                    <td>Fulano</td>
+                    <td>fulano@local.com</td>
+                </tr>
+                <tr>
+                    <td>Informações</td>
+                    <td>info@local.com</td>
+                </tr>
+                <tr>
+                    <td>Fulano</td>
+                    <td>fulano@local.com</td>
+                </tr>
+                <tr>
+                    <td>Informações</td>
+                    <td>info@local.com</td>
+                </tr>
+            </table>
+        </div>
+    </div>    
+</body>
+</html>

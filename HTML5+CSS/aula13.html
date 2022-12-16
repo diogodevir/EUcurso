@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas no HTML e CSS</title>
+    <style>
+        div {
+            margin: 10px;
+        }
+        div#id1 table, div#id1 th, div#id1 td {
+            border: 1px solid black;
+        }
+        div#id2 table {
+            border-collapse: collapse;
+        }
+        div#id2 table, div#id2 th, div#id2 td {
+            border: 1px solid black;
+        }
+        div#id3 th, div#id3 td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="id1">
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+            </tr>
+            <tr>
+                <td>Pessoa</td>
+                <td>pessoa@local.com</td>
+            </tr>
+                <td>Sujeito</td>
+                <td>sujeito@local.com</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="id2">
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+            </tr>
+            <tr>
+                <td>Fulano</td>
+                <td>fulano@local.com</td>
+            </tr>
+            <tr>
+                <td>Sicrano</td>
+                <td>sicrano@local.com</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="id3">
+        <table>
+            <tr>
+                <th colspan="2">Dados</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Fulano</td>
+                <td>fulano@local.com</td>
+            </tr>
+            <tr>
+                <td>info@local.com</td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>
